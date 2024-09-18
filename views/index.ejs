@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+
+<body>
+    <h1>Hello world!!! from EJS</h1>
+    <p><a href="/blog">Add new</a></p>
+    <div class="blogs">
+        <% for(var i=0; i < blogs.length; i++) { %>
+            <section class="blog">
+                <h2>
+                    <%= blogs[i].title %>
+                </h2>
+                <p>
+                    <%= blogs[i].content %>
+                </p>
+                <p>author：<%= blogs[i].author %>
+                </p>
+                <p>date：<%= blogs[i].date %>
+                </p>
+            </section>
+            <% } %> </div>
+</body>
+
+</html>
